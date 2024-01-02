@@ -1,6 +1,6 @@
 # Todo List
 
-Este projeto é um Todo List que criei com o objetivo principal de praticar a implementação de diferentes bancos de dados, como SQL, MongoDB, Firebase, PostgreSQL, entre outros.
+Este projeto é um Todo List que criei com o objetivo principal de praticar a implementação de diferentes bancos de dados, como MongoDB, Firebase, PostgreSQL, entre outros.
 
 ## 🛠️ Tecnologias utilizadas
 

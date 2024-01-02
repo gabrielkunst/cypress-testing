@@ -8,6 +8,7 @@ export function TasksList() {
 
   return (
     <section
+      data-test="tasks-list"
       className={`flex flex-col gap-3 flex-1   ${
         tasks.length === 0 &&
         "border-t-2 rounded-lg text-center border-customGray400 items-center justify-center p-4 "

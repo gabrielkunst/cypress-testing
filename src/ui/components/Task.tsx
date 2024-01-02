@@ -7,8 +7,11 @@ export function Task({ id, isDone, content }: TaskType) {
   const { handleDeleteTask, handleToggleTask } = useTasks();
 
   return (
-    <div className="flex items-center justify-between gap-3 p-4 text-sm rounded-lg bg-customGray500 text-customGray100">
-      <button onClick={() => handleToggleTask(id)}>
+    <article
+      className="flex items-center justify-between gap-3 p-4 text-sm rounded-lg bg-customGray500 text-customGray100"
+      data-test={`task-${id}`}
+    >
+      <button onClick={() => handleToggleTask(id)} data-test="complete-button">
         {isDone ? (
           <CheckCircle2 className="w-5 h-auto text-customPurple" />
         ) : (
@@ -18,9 +21,9 @@ export function Task({ id, isDone, content }: TaskType) {
       <p className={`flex-1 ${isDone && "text-customGray300 line-through"}`}>
         {content}
       </p>
-      <button onClick={() => handleDeleteTask(id)}>
+      <button onClick={() => handleDeleteTask(id)} data-test="remove-button">
         <Trash2 className="w-5 h-auto text-customGray300" />
       </button>
-    </div>
+    </article>
   );
 }

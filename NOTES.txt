@@ -1,0 +1,11 @@
+1. What is Cypress?
+=> In simple words, Cypress is a testing library used for testing web apps.
+
+2. How to install Cypress?
+=> npm i cypress --save-dev
+
+3. How to open Cypress?
+=> npx cypress open (dev)
+=> npx cypress run (prod, CI/CD)
+
+
